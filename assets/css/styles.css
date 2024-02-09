@@ -26,11 +26,35 @@ html body {
 }
 
 .project-image {
-    max-width: 80%; /* Adjust the value as needed */
+    max-width: 80%;
     height: auto;
+    cursor: pointer;
   }
 
 .project-caption {
    opacity: 85%;
 }
 
+.centered-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+/* media-query */
+@media (max-width: 600px) {
+    .fixed-height-col {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    footer {
+        padding: 10px 10px 0 10px;
+        font-size: 0.8em
+    }
+}
