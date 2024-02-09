@@ -15,8 +15,22 @@ html body {
 
 #home {
     margin-top: 5em;
-    /* min-height: 100vh; */
-    scroll-margin-top: 10em;
+    scroll-margin-top: 15em;
 }
 
+#about,
+#experience,
+#projects,
+#contact {
+    scroll-margin-top: 4em;
+}
+
+.project-image {
+    max-width: 80%; /* Adjust the value as needed */
+    height: auto;
+  }
+
+.project-caption {
+   opacity: 85%;
+}
 
