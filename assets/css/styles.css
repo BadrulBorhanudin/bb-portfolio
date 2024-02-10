@@ -34,16 +34,9 @@ html body {
    opacity: 85%;
 }
 
-/* Contact Me */
-.custom-form-bg input,
-.custom-form-bg textarea {
-    background-color: #212529;
-}
-
-.custom-form-bg input::placeholder,
-.custom-form-bg textarea::placeholder {
-    color: #6c757d;
-}
+a {
+    text-decoration: none;
+  }
 
 /* Experience Section */
 .centered-text {
@@ -55,10 +48,21 @@ html body {
     text-align: center;
 }
 
+/* Contact Me */
+.custom-form-bg input,
+.custom-form-bg textarea {
+    background-color: #212529;
+}
+
+.custom-form-bg input::placeholder,
+.custom-form-bg textarea::placeholder {
+    color: #6c757d;
+}
+
 /* Media-Query */
 @media (max-width: 600px) {
     .fixed-height-col {
-        max-height: 300px;
+        max-height: 250px;
         overflow-y: auto;
     }
 }
