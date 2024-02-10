@@ -1,6 +1,5 @@
 html body {
     background-color: #212529;
-    color: whitesmoke;
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
@@ -35,6 +34,18 @@ html body {
    opacity: 85%;
 }
 
+/* Contact Me */
+.custom-form-bg input,
+.custom-form-bg textarea {
+    background-color: #212529;
+}
+
+.custom-form-bg input::placeholder,
+.custom-form-bg textarea::placeholder {
+    color: #6c757d;
+}
+
+/* Experience Section */
 .centered-text {
     position: absolute;
     left: 50%;
@@ -44,7 +55,7 @@ html body {
     text-align: center;
 }
 
-/* media-query */
+/* Media-Query */
 @media (max-width: 600px) {
     .fixed-height-col {
         max-height: 300px;
