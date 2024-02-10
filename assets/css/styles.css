@@ -28,7 +28,7 @@ html body {
     max-width: 80%;
     height: auto;
     cursor: pointer;
-  }
+}
 
 .project-caption {
    opacity: 85%;
@@ -36,7 +36,7 @@ html body {
 
 a {
     text-decoration: none;
-  }
+}
 
 /* Experience Section */
 .centered-text {
