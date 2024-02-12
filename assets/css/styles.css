@@ -73,3 +73,17 @@ a {
         font-size: 0.8em
     }
 }
+
+@media (min-width: 300px) {
+  .carousel-caption {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) {
+    .carousel-caption {
+      padding: 12px;
+      font-size: 18px;
+    }
+  }
