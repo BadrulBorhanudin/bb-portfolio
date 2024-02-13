@@ -19,16 +19,13 @@ html body {
 }
 
 #work {
-    scroll-margin-top: 4em;
-}
-#contact {
-    min-height: 70vh;
+    scroll-margin-top: 2.5em;
 }
 
-.project-image {
-    max-width: 70%;
-    height: auto;
-    cursor: pointer;
+#contact {
+    margin-top: 3em;
+    min-height: 70vh;
+    scroll-margin-top: 2em;
 }
 
 a {
@@ -45,12 +42,27 @@ a {
     text-align: center;
 }
 
+/* Work Section */
+.project-image {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    object-position: center top;
+    overflow-y: hidden;
+}
+
 .accordion-container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
+.accordion {
+    --bs-accordion-btn-bg: #555555;
+    --bs-accordion-active-bg: #555555;
+    --bs-accordion-btn-focus-box-shadow: none;
+}
 
 /* Contact Me */
 .custom-form-bg input,
@@ -77,17 +89,3 @@ a {
         font-size: 0.8em
     }
 }
-
-@media (min-width: 300px) {
-  .carousel-caption {
-    padding: 8px;
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 600px) {
-    .carousel-caption {
-      padding: 12px;
-      font-size: 18px;
-    }
-  }
