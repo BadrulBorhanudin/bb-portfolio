@@ -3,37 +3,38 @@ $('.navbar-nav a').on('click', function() {
 });
 
 const projects = [
-    { name: "As The Crow Drives", image: "./assets/images/tool-demo-1.png", description: "First Group Project", demoLink: "https://BadrulBorhanudin.github.io/AsTheCrowDrives", repoLink: "https://github.com/BadrulBorhanudin/AsTheCrowDrives" },
-    { name: "Coming Soon", image: "./assets/images/tool-demo-2.png", description: "Second Group Project", demoLink: "#", repoLink: "#" },
+    { name: "Password Generator", image: "./assets/images/weekly-challenges-1.png", description: "Weekly Challenge - Password Generator", demoLink: "https://badrulborhanudin.github.io/password-generator/", repoLink: "https://github.com/badrulborhanudin/password-generator" },
+    { name: "Coding Quiz App", image: "./assets/images/weekly-challenges-2.png", description: "Weekly Challenge - Coding Quiz App", demoLink: "https://badrulborhanudin.github.io/coding-quiz-app/", repoLink: "https://github.com/BadrulBorhanudin/coding-quiz-app" },
+    { name: "Work Day Scheduler", image: "./assets/images/weekly-challenges-3.png", description: "Weekly Challenge - Work Day Scheduler", demoLink: "https://badrulborhanudin.github.io/work-day-scheduler/", repoLink: "https://github.com/badrulborhanudin/work-day-scheduler" },
+    { name: "Weather Dashboard", image: "./assets/images/weekly-challenges-4.png", description: "Weekly Challenge - Weather Dashboard", demoLink: "https://badrulborhanudin.github.io/weather-dashboard/", repoLink: "https://github.com/BadrulBorhanudin/weather-dashboard" },
+    { name: "As The Crow Drives", image: "./assets/images/group-project-1.png", description: "Group Project - #1", demoLink: "https://BadrulBorhanudin.github.io/AsTheCrowDrives", repoLink: "https://github.com/BadrulBorhanudin/AsTheCrowDrives" },
     // To Do: Add more projects
   ];
 
-function generateAccordion() {
-const accordionContainer = document.getElementById("projectAccordion");
+  function generateAccordion() {
+    const accordionContainer = document.getElementById("projectAccordion");
 
-projects.forEach((project, index) => {
-    const accordionItem = document.createElement("div");
-    accordionItem.classList.add("accordion-item");
+    projects.forEach((project, index) => {
+        const accordionItem = document.createElement("div");
+        accordionItem.classList.add("accordion-item");
 
-    accordionItem.innerHTML = `
-        <h2 class="accordion-header" id="project${index}Heading">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#project${index}Collapse" aria-expanded="${index === 0 ? 'true' : 'false'}" aria-controls="project${index}Collapse">
-                ${project.name}
-            </button>
-        </h2>
-        <div id="project${index}Collapse" class="accordion-collapse collapse ${index === 0 ? 'show' : ''}" aria-labelledby="project${index}Heading" data-bs-parent="#projectAccordion">
-            <div class="accordion-body bg-dark text-light">
-                <img src="${project.image}" class="d-block mx-auto my-3 project-image img-fluid" alt="${project.name}" data-bs-toggle="modal" data-bs-target="#imageModal${index}">
+        accordionItem.innerHTML = `
+            <h2 class="accordion-header" id="project${index}Heading">
+                <button class="accordion-button text-light type="button" data-bs-toggle="collapse" data-bs-target="#project${index}Collapse" aria-expanded="${index === 0 ? 'true' : 'false'}" aria-controls="project${index}Collapse">
+                    ${project.name}
+                </button>
+            </h2>
+            <div id="project${index}Collapse" class="accordion-collapse collapse ${index === 0 ? 'show' : ''}" aria-labelledby="project${index}Heading" data-bs-parent="#projectAccordion">
+                <div class="accordion-body bg-dark text-light">
                     <h5>${project.description}</h5>
+                    <img src="${project.image}" class="d-block mx-auto my-3 project-image img-fluid" alt="${project.name}" data-bs-toggle="modal" data-bs-target="#imageModal${index}">
                 </div>
             </div>
-        </div>
-    `;
 
-    accordionContainer.appendChild(accordionItem);
-    
-});
+        `;
 
+        accordionContainer.appendChild(accordionItem);
+    });
 }
 
 function generateModals() {
