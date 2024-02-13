@@ -1,2 +1,2 @@
-# bb-portfolio
-Badrul Borhanudin Portfolio
+# Badrul Borhanudin Portfolio
+This is my official portfolio
