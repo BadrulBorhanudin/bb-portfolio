@@ -12,26 +12,23 @@ html body {
     z-index: 1000; 
 }
 
-#home {
-    margin-top: 5em;
-    scroll-margin-top: 15em;
+#home,
+#about-experience {
+    min-height: 100vh;
+    scroll-margin-top: 2em;
 }
 
-#about,
-#experience,
-#projects,
-#contact {
+#work {
     scroll-margin-top: 4em;
+}
+#contact {
+    min-height: 70vh;
 }
 
 .project-image {
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
     cursor: pointer;
-}
-
-.project-caption {
-   opacity: 85%;
 }
 
 a {
@@ -47,6 +44,13 @@ a {
     width: 100%;
     text-align: center;
 }
+
+.accordion-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 /* Contact Me */
 .custom-form-bg input,
