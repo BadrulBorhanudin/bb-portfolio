@@ -9,7 +9,7 @@ html body {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 #home,
@@ -19,13 +19,11 @@ html body {
 }
 
 #work {
-    scroll-margin-top: 2.5em;
+    scroll-margin-top: 4em;
 }
 
 #contact {
     margin-top: 3em;
-    min-height: 70vh;
-    scroll-margin-top: 2em;
 }
 
 a {
@@ -49,6 +47,11 @@ a {
     object-fit: cover;
     object-position: center top;
     overflow-y: hidden;
+}
+
+.project-image:hover {
+    cursor: pointer;
+    opacity: 50%;
 }
 
 .accordion-container {
