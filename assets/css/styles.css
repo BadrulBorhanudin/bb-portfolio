@@ -84,6 +84,12 @@ a {
         max-height: 250px;
         overflow-y: auto;
     }
+
+    .project-image {
+        height: 20vh;
+        object-position: center top;
+        overflow-y: hidden;
+    }
 }
 
 @media (max-width: 450px) {
