@@ -19,7 +19,7 @@ html body {
 }
 
 #work {
-    scroll-margin-top: 4em;
+    scroll-margin-top: 2em;
 }
 
 #contact {
@@ -59,7 +59,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
 .accordion {
     --bs-accordion-btn-bg: #555555;
@@ -67,15 +67,8 @@ a {
     --bs-accordion-btn-focus-box-shadow: none;
 }
 
-/* Contact Me */
-.custom-form-bg input,
-.custom-form-bg textarea {
-    background-color: #212529;
-}
-
-.custom-form-bg input::placeholder,
-.custom-form-bg textarea::placeholder {
-    color: #6c757d;
+.accordion-button::not(.collapsed) {
+    box-shadow: none;
 }
 
 /* Media-Query */
