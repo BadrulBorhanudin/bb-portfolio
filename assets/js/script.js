@@ -36,10 +36,10 @@ const projects = [
         repoLink: "https://github.com/BadrulBorhanudin/weather-dashboard"
     },
     {
-        name: "As The Crow Drives",
+        name: "Route Optimisation Tool",
         image: "./assets/images/group-project-1.png",
         description: "Group Project - #1",
-        summary: "The first group project involves building a fully functional website that utilises at least two APIs and a CSS framework other than Bootstrap. This project is developed using the Bulma CSS Framework, GraphHopper API, Leaflet API, and GeoApify API.",
+        summary: "As The Crow Drive is the first group project involves building a fully functional website that utilises at least two APIs and a CSS framework other than Bootstrap. This project is developed using the Bulma CSS Framework, GraphHopper API, Leaflet API, and GeoApify API.",
         demoLink: "https://BadrulBorhanudin.github.io/AsTheCrowDrives",
         repoLink: "https://github.com/BadrulBorhanudin/AsTheCrowDrives"
     },
